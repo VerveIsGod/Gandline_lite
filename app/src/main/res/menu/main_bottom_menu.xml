@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_menu_button"
+        android:icon="@drawable/vip_icon"
+        android:title="@string/main_page" />
+
+    <item
+        android:id="@+id/blog_menu_button"
+        android:icon="@drawable/post_icon"
+        android:title="@string/post_transfer" />
+
+    <item
+        android:id="@+id/profile_menu_button"
+        android:icon="@drawable/profile_page_icon"
+        android:title="@string/profile_page" />
+
+</menu>

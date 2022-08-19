@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/account_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logoutButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:contentDescription="@string/logout_button"
+        android:focusable="true"
+        android:src="@drawable/account_logout_icon" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:gravity="center_horizontal" >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/profile_picture"
+                android:contentDescription="@string/profile_desc_pic"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/account_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/coins_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#706E6E"
+                android:textSize="30sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/gandline_app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="115dp"
+                android:fontFamily="@font/maccos_double"
+                android:text="@string/app_name"
+                android:textColor="#706E6E"
+                android:textSize="60sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/profile_subtext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3sp"
+                android:fontFamily="@font/maccos_double"
+                android:text="@string/app_name_profile"
+                android:textColor="#706E6E" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

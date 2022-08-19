@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".activity.LoginActivity">
+
+    <TextView
+        android:id="@+id/gandline_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/maccos_double"
+        android:text="@string/app_name"
+        android:textColor="#706E6E"
+        android:textSize="70sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_lay"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1.75dp"
+            android:background="@android:color/white"
+            android:textColorHint="#706E6E"
+            app:boxStrokeWidth="0dp"
+            android:textCursorDrawable="@null"
+            app:boxStrokeWidthFocused="0dp"
+            app:hintTextColor="#706E6E"
+            app:placeholderTextColor="@android:color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="250dp"
+                android:textCursorDrawable="@null"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:autofillHints="emailAddress"
+                android:background="@drawable/input_forms_style"
+                android:hint="@string/account_email_hint"
+                android:inputType="textEmailAddress"
+                android:paddingVertical="25dp"
+                android:textColor="@android:color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_lay"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1.75dp"
+            android:background="@android:color/white"
+            android:textColorHint="#706E6E"
+            android:textCursorDrawable="@null"
+            android:gravity="center_vertical"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#706E6E"
+            app:hintTextColor="#706E6E"
+            app:placeholderTextColor="@android:color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:autofillHints="password"
+                android:textCursorDrawable="@null"
+                android:background="@drawable/input_forms_style"
+                android:hint="@string/account_password_hint"
+                android:inputType="textPassword"
+                android:paddingVertical="25dp"
+                android:textColor="@android:color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/loginSubmitButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:drawableLeft="@drawable/account_login_icon"
+            android:gravity="center"
+            android:paddingVertical="12dp"
+            android:text="@string/login_button_text"
+            android:textColor="#454147"
+            app:strokeColor="#C1C0C0"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/author_app_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="@string/author_string"
+            android:textColor="#706E6E" />
+    </LinearLayout>
+
+</RelativeLayout>
