@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Gandline</string>
+    <string name="app_name_profile">more profile actions soon…</string>
+
+    <string name="main_page">VIP transfer</string>
+    <string name="post_transfer">Blog transfer</string>
+    <string name="profile_page">Profile page</string>
+
+    <string name="account_email">Account email</string>
+    <string name="account_password">Account password</string>
+    <string name="account_email_hint">Account email</string>
+    <string name="account_password_hint">Account password</string>
+    <string name="login_button_text">Login to account</string>
+    <string name="author_string">By verve</string>
+
+    <string name="money_amount_hint">Amount of coins to transfer</string>
+    <string name="user_link_hint">Link to the user</string>
+    <string name="blog_link_hint">Link to the blog</string>
+    <string name="send_button_text">Send coins to user</string>
+    <string name="button_vip_text">Send coins by VIP</string>
+    <string name="button_post_text">Send coins by blog</string>
+
+    <string name="profile_desc_pic">Profile image</string>
+    <string name="no_403_mode_checkbox">No 403 mode</string>
+    <string name="random_device_mode_checkbox">Random device id mode</string>
+    <string name="logout_button">logout_button</string>
+    <string name="default_coins_counter_text">0/X</string>
+
+</resources>
